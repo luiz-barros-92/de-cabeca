@@ -1,2 +1,3 @@
-# de-cabeca
-Sua calculadora online
+# De Cabeça
+Sua calculadora online\
+Site de cálculos matemáticos
