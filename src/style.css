@@ -18,8 +18,8 @@ body {
     width: 100%;
     background-color: #5a91f8;
     color: #535353;
-    padding: 20px;    
-    height: 30px; }
+    padding: 20px;
+    box-sizing: border-box; }
 
 nav ul {
     list-style: none;
@@ -37,14 +37,9 @@ nav a {
     text-decoration: none;
     color: #000000; }
 
-header nav ul {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px; }
-
 @media (max-width: 768px) {
+    main {
+        margin-top: 150px !important; }
     .menu {
         flex-wrap: wrap;
         justify-content: center; }
@@ -52,6 +47,8 @@ header nav ul {
         margin-bottom: 10px; } }
     
 @media (max-width: 480px) {
+    main {
+        margin-top: 150px !important; }
     .menu {
         flex-direction: column;
         align-items: center; }
@@ -79,6 +76,9 @@ article {
     border: 1px solid #5a91f8;
     border-radius: 10px;
     box-sizing: border-box; }
+
+h1 {
+    text-align: center; }
 
 h2 {
     font-size: 24px;
