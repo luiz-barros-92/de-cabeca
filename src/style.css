@@ -85,6 +85,32 @@ h2 {
     margin-top: 0;
     text-align: center; }
 
+input[type="number"] {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #5a91f8;
+    border-radius: 5px;
+    background-color: #c5c5c5;
+    color: #000000;
+    box-sizing: border-box; }
+
+input[type="button"] {
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #5a91f8;
+    border-radius: 5px;
+    background-color: #c5c5c5;
+    }
+
+output {
+    color: #a71616;
+    font-size: 20px; }
+
+
 a {
   color: burlywood; }
 
