@@ -130,6 +130,10 @@ p {
     text-align: justify;
     text-justify: inter-word; }
 
+b {
+    font-size: 18px;
+}
+
 #rodape {
     font-size: 15px; }
 
@@ -138,3 +142,16 @@ p {
 
 #icone {
     height: 32px; }
+
+#titulo {
+    font-family: Pacifico, cursive;
+    font-size: 60px;
+    font-weight: normal;    
+    color: #5a91f8;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+    
+#titulo small {
+    font-size: 20px;
+    color: #666;
+    font-style: italic; }
