@@ -93,7 +93,7 @@ h3 {
     color: #666; }
 
 hr {
-    color: #5a91f8; }
+    border-color: #5a91f8; }
 
 input[type="number"] {
     width: 90px;
