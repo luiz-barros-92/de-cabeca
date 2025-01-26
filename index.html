@@ -26,9 +26,14 @@
                 <hr><br>
                 <input type="number" name="porc5" id="porc5"> &emsp;<b>−</b>&emsp;<input type="number" name="porc6" id="porc6"> <b>%</b> &nbsp;<input type="button" value="=" onclick="calcularPorc3()">&emsp;<output id="outPorc3"></output>
                 </article>
-                <article id="geometria">    
-                    <h2>Geometria</h2>
-                </article>
+            <article id="geometria">    
+                <h2>Geometria</h2>
+                <h3>Cálculo com Raio</h3>
+                <input type="number" name="Raio" id="raio" placeholder="Raio"> 
+                    <select id="unidade" name="unidade"><option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option><option value="km">Km</option>
+                    </select>
+                <input type="button" value="Calcular" id="btnRaio" onclick="calcularRaio()">                    
+            </article>
     </section>
     </main>
     <footer>

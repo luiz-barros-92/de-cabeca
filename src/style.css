@@ -37,23 +37,14 @@ nav a {
     text-decoration: none;
     color: #000000; }
 
-@media (max-width: 768px) {
-    main {
-        margin-top: 150px !important; }
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center; }
-    .menu li {
-        margin-bottom: 10px; } }
-    
-@media (max-width: 480px) {
-    main {
-        margin-top: 150px !important; }
-    .menu {
-        flex-direction: column;
-        align-items: center; }
-    .menu li {
-        margin-bottom: 20px; } }
+article {    
+    color: #000000;
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 500px;    
+    border: 1px solid #5a91f8;
+    border-radius: 10px;
+    box-sizing: border-box; }
 
 main {
     margin-top: 30px;    
@@ -63,19 +54,32 @@ main {
     align-items: center;
     padding: 20px; }
 
+@media (max-width: 768px) {
+    main {
+        margin-top: 150px; }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center; }
+    .menu li {
+        margin-bottom: 10px; }
+    article {
+        width: 370px; }}
+    
+@media (max-width: 480px) {
+    main {
+        margin-top: 150px; }
+    .menu {
+        flex-direction: column;
+        align-items: center; }
+    .menu li {
+        margin-bottom: 20px; }
+    article {
+        width: 370px; }}
+
 .posts {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     align-items: center; }
-
-article {    
-    color: #000000;
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 900px;
-    border: 1px solid #5a91f8;
-    border-radius: 10px;
-    box-sizing: border-box; }
 
 h1 {
     text-align: center; }
@@ -85,9 +89,11 @@ h2 {
     margin-top: 0;
     text-align: center; }
 
+h3 {
+    color: #666; }
+
 hr {
-    color: #5a91f8;    
-}
+    color: #5a91f8; }
 
 input[type="number"] {
     width: 90px;
@@ -131,8 +137,7 @@ p {
     text-justify: inter-word; }
 
 b {
-    font-size: 18px;
-}
+    font-size: 18px; }
 
 #rodape {
     font-size: 15px; }
@@ -155,3 +160,10 @@ b {
     font-size: 20px;
     color: #666;
     font-style: italic; }
+
+select {
+    background-color: #c5c5c5;
+    border: 1px solid #5a91f8; }
+
+#btnRaio{
+    width: 90px; }
