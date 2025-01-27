@@ -40,3 +40,52 @@ function calcularPorc3() {
     const resultado = valor5 - (valor5 * (valor6 / 100));
     document.getElementById('outPorc3').value = `${resultado.toFixed(2).replace('.', ',')}`;
 }
+
+const selectUnidade = document.getElementById('unidade');
+const outUnidade1 = document.getElementById('outUnidade1');
+const outUnidade2 = document.getElementById('outUnidade2');
+const outUnidade3 = document.getElementById('outUnidade3');
+const outUnidade4 = document.getElementById('outUnidade4');
+const outUnidade5 = document.getElementById('outUnidade5');
+
+selectUnidade.addEventListener('change', () => {
+  const unidadeSelecionada = selectUnidade.value;
+  const unidadeExibida = getUnidadeExibida(unidadeSelecionada);
+
+  outUnidade1.value = unidadeExibida;
+  outUnidade2.value = unidadeExibida;
+  outUnidade3.value = `${unidadeExibida}²`;
+  outUnidade4.value = `${unidadeExibida}²`;
+  outUnidade5.value = `${unidadeExibida}³`;
+});
+
+function getUnidadeExibida(unidade) {
+  switch (unidade) {
+    case 'mm':
+      return 'mm';
+    case 'cm':
+      return 'cm';
+    case 'm':
+      return 'm';
+    case 'km':
+      return 'km';
+    default:
+      return '';
+  }
+}
+
+function calcularRaio() {
+  const raio = parseFloat(document.getElementById('raio').value);
+
+  const diametro = raio * 2;
+  const circunferencia = 2 * 3.1415 * raio;
+  const areaCirc = 3.1415 * (raio ** 2);
+  const areaEsf = 4 * 3.1415 * (raio ** 2);
+  const volumeEsf = (4 * 3.1415 * (raio ** 3)) / 3;
+
+  document.getElementById('outResultado1').value = `${diametro.toFixed(2).replace('.', ',')}`;
+  document.getElementById('outResultado2').value = `${circunferencia.toFixed(2).replace('.', ',')}`;
+  document.getElementById('outResultado3').value = `${areaCirc.toFixed(2).replace('.', ',')}`;
+  document.getElementById('outResultado4').value = `${areaEsf.toFixed(2).replace('.', ',')}`;
+  document.getElementById('outResultado5').value = `${volumeEsf.toFixed(2).replace('.', ',')}`;  
+}

@@ -44,7 +44,9 @@ article {
     width: 500px;    
     border: 1px solid #5a91f8;
     border-radius: 10px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-bottom: 95px;
+    margin-top: 0; }
 
 main {
     margin-top: 30px;    
@@ -90,6 +92,7 @@ h2 {
     text-align: center; }
 
 h3 {
+    margin-top: 0;
     color: #666; }
 
 hr {

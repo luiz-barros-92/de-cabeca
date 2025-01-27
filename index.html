@@ -25,14 +25,18 @@
                 <input type="number" name="porc3" id="porc3"> &emsp;<b>+</b>&emsp;<input type="number" name="porc4" id="porc4"> <b>%</b> &nbsp;<input type="button" value="=" onclick="calcularPorc2()">&emsp;<output id="outPorc2"></output>
                 <hr><br>
                 <input type="number" name="porc5" id="porc5"> &emsp;<b>−</b>&emsp;<input type="number" name="porc6" id="porc6"> <b>%</b> &nbsp;<input type="button" value="=" onclick="calcularPorc3()">&emsp;<output id="outPorc3"></output>
-                </article>
-            <article id="geometria">    
-                <h2>Geometria</h2>
+                </article>                         
+            <h2>Geometria</h2>
+            <article id="geometria">
                 <h3>Cálculo com Raio</h3>
                 <input type="number" name="Raio" id="raio" placeholder="Raio"> 
-                    <select id="unidade" name="unidade"><option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option><option value="km">Km</option>
-                    </select>
-                <input type="button" value="Calcular" id="btnRaio" onclick="calcularRaio()">                    
+                <select id="unidade" name="unidade"><option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option><option value="km">Km</option></select>
+                <input type="button" value="Calcular" id="btnRaio" onclick="calcularRaio()">
+                <p>Diâmetro <output id="outResultado1"></output>&nbsp;<output id="outUnidade1"></output></p>
+                <p>Circunferência <output id="outResultado2"></output>&nbsp;<output id="outUnidade2"></output></p>
+                <p>Área do Circulo <output id="outResultado3"></output>&nbsp;<output id="outUnidade3"></output></p>
+                <p>Área da Esfera <output id="outResultado4"></output>&nbsp;<output id="outUnidade4"></output></p>
+                <p>Volume da Esfera <output id="outResultado5"></output>&nbsp;<output id="outUnidade5"></output></p>
             </article>
     </section>
     </main>
