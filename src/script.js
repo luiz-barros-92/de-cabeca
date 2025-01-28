@@ -77,6 +77,11 @@ function getUnidadeExibida(unidade) {
 function calcularRaio() {
   const raio = parseFloat(document.getElementById('raio').value);
 
+  if (isNaN(raio) || raio < 0) {
+    alert("Por favor, insira apenas valores numéricos positivos!");
+    return;
+  }
+
   const diametro = raio * 2;
   const circunferencia = 2 * 3.1415 * raio;
   const areaCirc = 3.1415 * (raio ** 2);
