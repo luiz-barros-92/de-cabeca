@@ -2,6 +2,16 @@ window.onload = function() {
     document.getElementById("ano").innerHTML = new Date().getFullYear(); 
 }
 
+const linksInternos = document.querySelectorAll('a[href^="#"]');
+linksInternos.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const offset = link.getAttribute('data-offset');
+    const elemento = document.getElementById(link.href.split('#')[1]);
+    window.scrollTo({ top: elemento.offsetTop - offset, behavior: 'smooth' });
+  });
+});
+
 function calcularPorc1() {
     const valor1 = parseFloat(document.getElementById('porc1').value);
     const valor2 = parseFloat(document.getElementById('porc2').value);
