@@ -11,8 +11,9 @@
     <nav class="menu">
         <ul>
             <li><a href="index.html"><img src="src/img/calc.png" alt="calculadora" id="icone"></a></li>
-            <li><a href="#porcentagem" data-offset="100">Porcentagem</a></li>
-            <li><a href="#geometria" data-offset="200">Geometria</a></li>
+            <li><a href="#porcentagem" data-offset="120">Porcentagem</a></li>
+            <li><a href="#geometria" data-offset="120">Geometria</a></li>
+            <li><a href="#regraTres" data-offset="120">Regra de Três</a></li>
         </ul>
     </nav>
     <main>
@@ -26,9 +27,9 @@
                 <hr><br>
                 <input type="number" name="porc5" id="porc5"> &emsp;<b>−</b>&emsp;<input type="number" name="porc6" id="porc6"> <b>%</b> &nbsp;<input type="button" value="=" onclick="calcularPorc3()">&emsp;<output id="outPorc3"></output>
                 </article>                         
-            <h2>Geometria</h2>
+            <h2 id="geometria">Geometria</h2>
             <article>
-                <h3 id="geometria">Cálculo com Raio</h3>
+                <h3>Cálculo com Raio</h3>
                 <input type="number" name="Raio" id="raio" placeholder="Raio"> 
                 <select id="unidade" name="unidade"><option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option><option value="km">Km</option></select>
                 <input type="button" value="Calcular" id="btnRaio" onclick="calcularRaio()">
@@ -38,6 +39,23 @@
                 <p>Área da Esfera <output id="outResultado4"></output>&nbsp;<output id="outUnidade4"></output></p>
                 <p>Volume da Esfera <output id="outResultado5"></output>&nbsp;<output id="outUnidade5"></output></p>
             </article>
+            <h2 id="regraTres">Regra de Três</h2>
+            <article>
+                <h3>Regra de Três Simples</h3>
+                <br>
+                <input type="number" name="a3" id="a3" placeholder="A">
+                &emsp;&#10230;&emsp;
+                <input type="number" name="b3" id="b3" placeholder="B">  
+                <br>    
+                <span id="igual">=</span>
+                <br><br>            
+                <input type="number" name="c3" id="c3" placeholder="C">
+                &emsp;&#10230;&emsp;
+                &emsp;<output id="out3Simp">X</output>
+                <br>
+                <input type="button" value="Calcular" id="btnReg3Simp" onclick="regra3Simp()">
+            </article>
+
     </section>
     </main>
     <footer>

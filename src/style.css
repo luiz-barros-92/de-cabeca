@@ -168,5 +168,9 @@ select {
     background-color: #c5c5c5;
     border: 1px solid #5a91f8; }
 
-#btnRaio{
+#btnRaio, #btnReg3Simp {
     width: 90px; }
+
+#igual {
+    font-size: 30px;
+    margin: 115px; }

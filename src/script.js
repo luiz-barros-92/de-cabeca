@@ -104,3 +104,18 @@ function calcularRaio() {
   document.getElementById('outResultado4').value = `${areaEsf.toFixed(2).replace('.', ',')}`;
   document.getElementById('outResultado5').value = `${volumeEsf.toFixed(2).replace('.', ',')}`;  
 }
+
+function regra3Simp() {
+ 
+	const a = parseFloat(document.getElementById('a3').value);
+	const b = parseFloat(document.getElementById('b3').value);
+	const c = parseFloat(document.getElementById('c3').value);
+
+	if (isNaN(a) || isNaN(b) || isNaN(c)) {
+		alert("Por favor, insira apenas valores numéricos!");    
+    return;
+	}
+
+const resultado = (b * c) / a;
+document.getElementById('out3Simp').value = `${resultado.toFixed(2).replace('.', ',')}`;
+}
