@@ -105,8 +105,7 @@ function calcularRaio() {
   document.getElementById('outResultado5').value = `${volumeEsf.toFixed(2).replace('.', ',')}`;  
 }
 
-function regra3Simp() {
- 
+function regra3Simp() { 
 	const a = parseFloat(document.getElementById('a3').value);
 	const b = parseFloat(document.getElementById('b3').value);
 	const c = parseFloat(document.getElementById('c3').value);
