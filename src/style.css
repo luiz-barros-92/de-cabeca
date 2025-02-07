@@ -118,6 +118,15 @@ input[type="button"] {
     border-radius: 5px;
     background-color: #c5c5c5; }
 
+button {
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid #5a91f8;
+    border-radius: 5px;
+    background-color: #c5c5c5;
+}
+
 output {
     color: #a71616;
     font-size: 20px; }
@@ -167,9 +176,6 @@ b {
 select {
     background-color: #c5c5c5;
     border: 1px solid #5a91f8; }
-
-#btnRaio, #btnReg3Simp {
-    width: 90px; }
 
 #igual {
     font-size: 30px;

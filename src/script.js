@@ -115,6 +115,18 @@ function regra3Simp() {
     return;
 	}
 
-const resultado = (b * c) / a;
-document.getElementById('out3Simp').value = `${resultado.toFixed(2).replace('.', ',')}`;
+  const resultado = (b * c) / a;
+  document.getElementById('out3Simp').value = `${resultado.toFixed(2).replace('.', ',')}`;
+}
+
+function kmParaMilha() {
+  const km = parseFloat(document.getElementById('km').value);
+
+  if (isNaN(km)) {
+		alert("Por favor, insira apenas valores numéricos!");    
+    return;
+	}
+
+  const resultado = km / 1.609;
+  document.getElementById('milha').value = `${resultado.toFixed(2).replace('.', ',')} Milhas`;
 }

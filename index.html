@@ -33,7 +33,7 @@
                 <h3>Cálculo com Raio</h3>
                 <input type="number" name="Raio" id="raio" placeholder="Raio"> 
                 <select id="unidade" name="unidade"><option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option><option value="km">Km</option></select>
-                <input type="button" value="Calcular" id="btnRaio" onclick="calcularRaio()">
+                <button onclick="calcularRaio()">Calcular</button>
                 <p>Diâmetro <output id="outResultado1"></output>&nbsp;<output id="outUnidade1"></output></p>
                 <p>Circunferência <output id="outResultado2"></output>&nbsp;<output id="outUnidade2"></output></p>
                 <p>Área do Circulo <output id="outResultado3"></output>&nbsp;<output id="outUnidade3"></output></p>
@@ -54,12 +54,15 @@
                 &emsp;&#10230;&emsp;
                 &emsp;<output id="out3Simp">X</output>
                 <br>
-                <input type="button" value="Calcular" id="btnReg3Simp" onclick="regra3Simp()">
+                <button onclick="regra3Simp()">Calcular</button>
             </article>
             <h2 id="conversores">Conversores</h2>
             <article>
                 <h3>Conversor de Unidades</h3>
-                <img src="src/img/construction.png" alt="Em construção">
+                <i><p>Km &#10230; Milhas</p></i>
+                <input type="number" name="km" id="km" placeholder="Km"> Km
+                <input type="button" value="=" onclick="kmParaMilha()">
+                &emsp;<output id="milha"></output>
             </article>
     </section>
     </main>
