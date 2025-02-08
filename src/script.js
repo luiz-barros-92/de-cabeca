@@ -106,14 +106,14 @@ function calcularRaio() {
 }
 
 function regra3Simp() { 
-	const a = parseFloat(document.getElementById('a3').value);
-	const b = parseFloat(document.getElementById('b3').value);
-	const c = parseFloat(document.getElementById('c3').value);
+  const a = parseFloat(document.getElementById('a3').value);
+  const b = parseFloat(document.getElementById('b3').value);
+  const c = parseFloat(document.getElementById('c3').value);
 
-	if (isNaN(a) || isNaN(b) || isNaN(c)) {
-	  alert("Por favor, insira apenas valores numéricos!");    
+  if (isNaN(a) || isNaN(b) || isNaN(c)) {
+    alert("Por favor, insira apenas valores numéricos!");    
     return;
-	}
+  }
 
   const resultado = (b * c) / a;
   document.getElementById('out3Simp').value = `${resultado.toFixed(2).replace('.', ',')}`;
@@ -123,9 +123,9 @@ function kmParaMilha() {
   const km = parseFloat(document.getElementById('km').value);
 
   if (isNaN(km)) {
-	  alert("Por favor, insira apenas valores numéricos!");    
+    alert("Por favor, insira apenas valores numéricos!");    
     return;
-	}
+  }
 
   const resultado = km / 1.609;
   document.getElementById('milha').value = `${resultado.toFixed(2).replace('.', ',')} Milhas`;
@@ -137,7 +137,7 @@ function MilhaParaKm() {
   if (isNaN(milha)) {
     alert("Por favor, insira apenas valores numéricos!");    
     return;
-	}
+  }
 
   const resultado = milha * 1.609;
   document.getElementById('quilometro').value = `${resultado.toFixed(2).replace('.', ',')} Km`;
