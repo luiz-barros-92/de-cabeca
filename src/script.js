@@ -142,3 +142,18 @@ function MilhaParaKm() {
   const resultado = milha * 1.609;
   document.getElementById('quilometro').value = `${resultado.toFixed(2).replace('.', ',')} Km`;
 }
+
+function CelsiusPara() {
+  const celsius = parseFloat(document.getElementById('celsius').value);
+
+  const resultado = (celsius * 1.8) + 32;
+  document.getElementById('fahren').value = `${resultado.toFixed(2).replace('.', ',')} °F`;
+}
+
+function FahrenPara() {
+  const fahren = parseFloat(document.getElementById('fahrenInput').value);
+
+  const resultado = (fahren - 32) / 1.8;
+  document.getElementById('celsiusOutput').value = `${resultado.toFixed(2).replace('.', ',')} °C`;
+
+}
