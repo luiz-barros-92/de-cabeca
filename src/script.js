@@ -143,8 +143,14 @@ function MilhaParaKm() {
   document.getElementById('quilometro').value = `${resultado.toFixed(2).replace('.', ',')} Km`;
 }
 
+
 function CelsiusPara() {
   const celsius = parseFloat(document.getElementById('celsius').value);
+
+  if (isNaN(celsius)) {
+    alert("Por favor, insira apenas valores numéricos!");    
+    return;
+  }
 
   const resultado = (celsius * 1.8) + 32;
   document.getElementById('fahren').value = `${resultado.toFixed(2).replace('.', ',')} °F`;
@@ -152,6 +158,11 @@ function CelsiusPara() {
 
 function FahrenPara() {
   const fahren = parseFloat(document.getElementById('fahrenInput').value);
+
+  if (isNaN(fahren)) {
+    alert("Por favor, insira apenas valores numéricos!");    
+    return;
+  }
 
   const resultado = (fahren - 32) / 1.8;
   document.getElementById('celsiusOutput').value = `${resultado.toFixed(2).replace('.', ',')} °C`;
