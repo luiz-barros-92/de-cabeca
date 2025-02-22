@@ -131,7 +131,7 @@ function kmParaMilha() {
   document.getElementById('milha').value = `${resultado.toFixed(2).replace('.', ',')} Milhas`;
 }
 
-function MilhaParaKm() {
+function milhaParaKm() {
   const milha = parseFloat(document.getElementById('milhaIn').value);
 
   if (isNaN(milha)) {
@@ -144,7 +144,7 @@ function MilhaParaKm() {
 }
 
 
-function CelsiusPara() {
+function celsiusPara() {
   const celsius = parseFloat(document.getElementById('celsius').value);
 
   if (isNaN(celsius)) {
@@ -156,7 +156,7 @@ function CelsiusPara() {
   document.getElementById('fahren').value = `${resultado.toFixed(2).replace('.', ',')} °F`;
 }
 
-function FahrenPara() {
+function fahrenPara() {
   const fahren = parseFloat(document.getElementById('fahrenInput').value);
 
   if (isNaN(fahren)) {
